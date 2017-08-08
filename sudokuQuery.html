@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            SudokuQuery
+        </title>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1" name="viewport">
+                <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+                </link>
+                <link href="sudoku.css" rel="stylesheet">
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h4>
+                    SudokuQuery
+                </h4>
+            </header>
+            <aside class="sidebar-left">
+                <div class="alert alert-info" id="message">
+                </div>
+                <label for="runner">
+                    Time
+                </label>
+                <span id="runner">
+                </span>
+                <div class="form-group">
+                    <label for="difficulty">
+                        Select difficulty:
+                    </label>
+                    <select class="form-control" id="difficulty">
+                        <option>
+                            Beginner
+                        </option>
+                        <option>
+                            Easy
+                        </option>
+                        <option>
+                            Normal
+                        </option>
+                        <option>
+                            Expert
+                        </option>
+                        <option>
+                            Devil
+                        </option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" id="validate" type="button">
+                    Validate
+                </button>
+                <button class="btn btn-primary" id="reset" type="button">
+                    Reset
+                </button>
+            </aside>
+            <article class="content">
+                <div id="sudoku-grid">
+                </div>
+                <div id="selection-grid">
+                </div>
+            </article>
+        </div>
+    </body>
+</html>
+<script src="jQuery/jquery-3.2.1.min.js">
+</script>
+<script src="jquery-ui/jquery-ui.min.js">
+</script>
+<script src="jquery-runner/jquery.runner-min.js">
+</script>
+<script src="scripts/sudoku.js">
+</script>
+<script src="bootstrap/js/bootstrap.min.js">
+</script>
+<script src="scripts/sudoku_engine.js">
+</script>
